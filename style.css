@@ -1,0 +1,152 @@
+html, body {
+  height: 100%;
+
+}
+
+body {
+  background: url("img/weather-design.png") no-repeat 50% 50% fixed;
+  background-repeat: no-repeat;
+  background-size: cover !important;
+}
+
+.container {
+  position: absolute;
+  bottom: 5%;
+  max-width: inherit !important;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.form-control {
+  width: auto!important;
+}
+
+.form-control-borderless {
+  border: none;
+}
+
+h2, h5, h6 {
+  color: white !important;
+  font-family: 'Open Sans', sans-serif !important;
+  text-align: left;
+}
+
+.card {
+  background: transparent !important;
+  width: 25%;
+  height: 100%;
+  margin-right: 15px;
+  align-items: center;
+  border:none !important;
+  text-align: center;
+}
+
+
+.week {
+  background-color: rgba(255, 255, 255, 0.07);
+}
+
+.main-temperature {
+  font-size: 90px;
+  font-family: 'Open Sans', sans-serif;
+}
+.main-card{
+  border: none !important;
+}
+
+.grid {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  width: 90%;
+
+}
+
+.has-search .form-control {
+  padding-left: 2.375rem;
+  background: #6CA7DA;
+  border-radius: 0;
+  border-color: #1249c0;
+}
+
+.form-group.has-search {
+  position: absolute;
+  right: 40px;
+  margin-top: 40px;
+}
+
+
+input.form-control::-webkit-input-placeholder {
+  color: black;
+  font-size: 12px;
+}
+
+.has-search .form-control-feedback {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  width: 2.375rem;
+  height: 2.375rem;
+  line-height: 2.375rem;
+  text-align: center;
+  pointer-events: none;
+  color: black;
+}
+
+.small-icon {
+  width: 93%;
+  color: white;
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+.small-icon i {
+  float: right;
+}
+
+@media (max-width: 768px) {
+  html,body {
+    background-position: left;
+  }
+
+  .grid {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 100%;
+    height: 60%;
+    margin-top: 40px;
+  }
+
+  .form-group.has-search {
+    left: 35%;
+  }
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 90%;
+    bottom: auto;
+    margin-top: 45px;
+  }
+  .card {
+    width: 50%;
+    margin-bottom: 25px;
+  }
+  .small-icon {
+    display: flex;
+    justify-content: center;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+
+}
+@media (max-width: 420px) {
+  .form-group.has-search {
+     left: 25%;
+  }
+}
